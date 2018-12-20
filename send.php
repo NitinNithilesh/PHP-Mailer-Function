@@ -1,12 +1,15 @@
+
 <?php
 
 $from=$_POST['from'];
 $msg=$_POST['message'];
 
-$to      = 'nitinnithilesh2898@gmail.com';
-$subject = 'The subject';
-$message = $msg;
+$to = "nitinnithilesh2898@gmail.com";
+$subject = $from;
+$txt = $msg;
+$a="From: ";
 $headers = '';
 
-mail($from, $subject, $message, $headers);
-?> 
+mail($to,$subject,$txt,$headers);
+
+?>
